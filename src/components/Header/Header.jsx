@@ -38,7 +38,7 @@ const Header = (props) => {
         fetchUserName();
       }
       else{
-        setProfilePhoto(localStorage.getItem("userPhoto"));
+        setUserProfile(localStorage.getItem("userPhoto"));
       }
 
     } else {
