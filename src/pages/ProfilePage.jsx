@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./profilepage.css";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/footer/Footer";
 import { useNavigate } from "react-router-dom";
 import ContactPage from "./ContactPage";
 

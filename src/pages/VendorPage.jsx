@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./VendorPage.css";
+import "./vendorPage.css";
 import MenuPage from "./MenuPage";
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/footer/Footer";
 
 const VendorPage = () => {
   const [vendors, setVendors] = useState([]);

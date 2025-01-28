@@ -1,7 +1,7 @@
 import React, { useEffect, useState,useRef } from "react";
 import { useNavigate } from "react-router-dom"; 
 import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Footer from "../components/footer/Footer";
 import "./menuPage.css";
 
 const MenuPage = (props) => {
