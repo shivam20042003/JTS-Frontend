@@ -11,7 +11,7 @@ const Testimonials = () => {
       </div>
       <div className="testimonial-item">
         <p>"I love the variety in the menu and how fresh everything tastes!"</p>
-        <p>- Rohan M.</p>
+        <p>- Rohit M.</p>
       </div>
       <div className="testimonial-item">
         <p>"Jain Tiffin Shala has made my life so much easier with their meal delivery!"</p>
