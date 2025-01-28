@@ -39,6 +39,7 @@ const Header = (props) => {
       }
       else{
         setUserProfile(localStorage.getItem("userPhoto"));
+        setIsLoggedIn(true);
       }
 
     } else {
