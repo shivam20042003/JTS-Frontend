@@ -10,15 +10,15 @@ const HeroSection = () => {
   const swiperRef = useRef(null);  // Create a reference for the Swiper
 
   const images = [
-    "public/assets/show1.jpeg",
-    "public/assets/show2.jpeg",
-    "public/assets/show3.jpeg",
-    "public/assets/show4.jpeg",
-    "public/assets/show5.jpeg",
-    "public/assets/show6.jpeg",
-    "public/assets/show7.jpeg",
-    "public/assets/show8.jpeg",
-    "public/assets/show9.jpeg",
+    "assets/show1.jpeg",
+    "assets/show2.jpeg",
+    "assets/show3.jpeg",
+    "assets/show4.jpeg",
+    "assets/show5.jpeg",
+    "assets/show6.jpeg",
+    "assets/show7.jpeg",
+    "assets/show8.jpeg",
+    "assets/show9.jpeg",
   ];
 
   return (

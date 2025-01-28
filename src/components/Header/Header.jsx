@@ -5,7 +5,7 @@ import { BsList } from 'react-icons/bs';
 
 const Header = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [userProfile, setUserProfile] = useState('public/assets/LOGO.jpeg');
+  const [userProfile, setUserProfile] = useState('assets/LOGO.jpeg');
 
   useEffect(() => {
     const authToken = localStorage.getItem('authToken');
@@ -43,7 +43,7 @@ const Header = (props) => {
     <header className="header">
       <div className="logo">
         <Link to="/">
-          <img src="public/assets/LOGO.jpeg" alt="Logo" className="logo-img" />
+          <img src="assets/LOGO.jpeg" alt="Logo" className="logo-img" />
         </Link>
       </div>
       <nav>
