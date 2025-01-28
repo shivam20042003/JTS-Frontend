@@ -37,7 +37,7 @@ const HeroSection = () => {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <img src={image} alt={`Slide ${index + 2}`} className="hero-image" />
+            <img src={image} alt={`Slide ${index + 1}`} className="hero-image" />
           </SwiperSlide>
         ))}
       </Swiper>
