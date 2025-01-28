@@ -1,0 +1,145 @@
+/* header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    box-shadow: 0 8px 6px -6px gray;
+    position: sticky;
+    top: 0;
+    margin-left: -200px;
+    margin-right: -200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    z-index: 9;
+    background-color: white;
+    overscroll-behavior-y: none;
+}
+.logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.logo:hover{
+    scale: 1.07;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 20px;
+    font-size: 20px;
+  }
+  
+  nav ul li a {
+    color: #000;
+    opacity: 0.6;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover{
+    opacity: 1;
+    color:rgb(235, 74, 63);
+  } */
+
+  @font-face {
+    font-family: ketchup;
+    src: url(../../../Ketchup\ Manis\ Demo.ttf);
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    box-shadow: 0 8px 6px -6px gray;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background-color: white;
+    overscroll-behavior-y: none;
+    font-family: ketchup;
+}
+
+.logo-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 20px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: #333;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+nav ul li a:hover {
+    opacity: 1;
+    color: #eb4a3f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+  
+
+  
+
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: #333 0.1px solid;
+    cursor: pointer;
+  }

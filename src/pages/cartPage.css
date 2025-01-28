@@ -1,0 +1,273 @@
+/* General page styling */
+.cart-page {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #faf5e6; /* Light beige for clean and healthy feel */
+  color: #3d3d3d; /* Neutral dark for readability */
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #ffd23f;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background-color: #f8c784;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #3d3d3d;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background-color: #ffb347;
+}
+
+.cart-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e76f51;
+  display: flex;
+  align-items: center;
+}
+
+.cart-title svg {
+  margin-right: 10px;
+}
+
+/* Delivery Section */
+.delivery-section {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.delivery-section h2 {
+  font-size: 1.5rem;
+  color: #2a9d8f;
+}
+
+.addresses-list {
+  margin: 15px 0;
+}
+
+.address-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.address-item label {
+  flex: 1;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.address-item input {
+  cursor: pointer;
+}
+
+.address-item button {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.address-item button:hover {
+  background: #c72c3a;
+}
+
+.address-add {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.address-add input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.address-add button {
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.address-add button:hover {
+  background: #1e876a;
+}
+
+/* Cart items section */
+.cart-items-container {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-image img {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 5px;
+}
+
+.cart-item-details {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.item-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #264653;
+}
+
+.item-price {
+  margin: 5px 0;
+  color: #e76f51;
+  font-weight: bold;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-actions button {
+  background: #ffbe0b;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-item-actions button:hover {
+  background: #ff9f1c;
+}
+
+.item-quantity {
+  font-size: 16px;
+}
+
+.item-total {
+  color: #3a3a3a;
+  font-weight: bold;
+}
+
+/* Footer section */
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #e9c46a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #264653;
+}
+
+.checkout-button {
+  padding: 10px 20px;
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  background: #1e876a;
+}
+
+.checkout-button:disabled {
+  background: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Empty Cart Styles */
+.cart-empty {
+  text-align: center;
+  padding: 2rem;
+  color: #555;
+}
+
+.cart-empty h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.cart-empty p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #777;
+}
+.explore-menu-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff6f61; /* Warm food-related color */
+  border: none;
+  border-radius: 8px; /* Softer look */
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.explore-menu-button:hover {
+  background-color: #e65b50; /* Slightly darker on hover */
+  transform: translateY(-3px); /* Adds a subtle lift effect */
+}
+
+.explore-menu-button:active {
+  background-color: #d1493a; /* Even darker for active state */
+  transform: translateY(0); /* Reset lift effect */
+}

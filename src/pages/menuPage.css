@@ -1,0 +1,209 @@
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf5e6; /* Light beige background */
+  color: #3d3d3d; /* Neutral color for text */
+}
+
+.menu-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 70vh;
+}
+
+.menu-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e76f51; /* Burnt orange for main headings */
+}
+
+/* Menu Items Styling */
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Menu Cards */
+.menu-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.menu-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.product-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 14px;
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Product Details */
+.product-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #264653; /* Dark greenish-blue */
+  margin-bottom: 10px;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: #2a9d8f;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-button,
+.remove-button {
+  background: #2a9d8f;
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover,
+.remove-button:hover {
+  background: #1e876a;
+}
+
+.quantity {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hover Effect Description */
+.product-hover-description {
+  background: #264653;
+  color: #fff;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: left;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-card:hover .product-hover-description {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Cart Button */
+.cart-button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cart-button {
+  background: #e76f51;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  position: sticky;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.cart-button:hover {
+  background: #d95743;
+  transform: scale(1.05);
+}
+
+.feedback-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #2a9d8f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeOut 2s ease-in-out 1s forwards;
+}
+
+/* Animations */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+/* Sticky Cart Button with Consistent Design */
+.cart-button-container {
+  position: sticky;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+

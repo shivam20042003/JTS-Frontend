@@ -1,0 +1,102 @@
+/* General Testimonials Section */
+.testimonials {
+    padding: 60px 30px;
+    background-color: #fcfcfa; /* Subtle off-white background */
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1100px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Section Heading */
+  .testimonials h2 {
+    font-size: 2.8rem;
+    color: #155d27; /* Deep green */
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    font-family: 'ketchup', sans-serif; /* Apply custom font */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Testimonial Item */
+  .testimonial-item {
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 850px;
+    background: linear-gradient(to bottom right, #ffffff, #f8f8f8);
+    border-radius: 15px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Text Styling */
+  .testimonial-item p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #444; /* Neutral text color for high readability */
+    margin: 10px 0;
+  }
+  
+  .testimonial-item p:last-child {
+    font-style: italic;
+    color: #888; /* Subtle emphasis for names */
+    margin-top: 15px;
+    font-size: 1.3rem;
+  }
+  
+  /* Section Borders (Optional Decorative Element) */
+  .testimonials:before, 
+  .testimonials:after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: #178844;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .testimonials:after {
+    top: auto;
+    bottom: 10%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonials h2 {
+      font-size: 2.4rem;
+    }
+  
+    .testimonial-item {
+      padding: 20px;
+      max-width: 95%;
+    }
+  
+    .testimonial-item p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonials h2 {
+      font-size: 2rem;
+    }
+  
+    .testimonial-item {
+      padding: 15px;
+      max-width: 100%;
+    }
+  
+    .testimonial-item p {
+      font-size: 1.2rem;
+    }
+  }

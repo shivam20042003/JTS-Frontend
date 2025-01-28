@@ -1,0 +1,82 @@
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #eb4a3f;
+  }
+  
+  .auth-form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    border-color: #eb4a3f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(235, 74, 63, 0.5);
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    width: 48%;
+    padding: 12px;
+    background-color: #eb4a3f;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #c33b30;
+  }
+  
+  .cancel-button {
+    background-color: #888;
+  }
+  
+  .cancel-button:hover {
+    background-color: #666;
+  }
+  
+  .toggle-link {
+    text-align: center;
+    margin-top: 15px;
+    color: #555;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .toggle-link:hover {
+    color: #eb4a3f;
+  }

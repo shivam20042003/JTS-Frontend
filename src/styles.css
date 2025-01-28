@@ -1,0 +1,21 @@
+@font-face {
+    font-family: cookie;
+    src: url(../Cookie-Regular.ttf);
+}
+body{
+    overscroll-behavior-y: none;
+    scroll-behavior: smooth;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+
+  background-color: #faf5e6; /* Light beige background */
+  color: #3d3d3d; /* Neutral color for text */
+}
+
+@media (max-width: 768px){
+    body{
+        margin-left: 0;
+    margin-right: 0;
+    }
+}
