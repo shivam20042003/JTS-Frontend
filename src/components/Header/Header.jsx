@@ -24,6 +24,7 @@ const Header = (props) => {
           const data = await response.json();
           if (data.Profile_Photo) {
             const userProfff = `data:image/jpeg;base64,${data.Profile_Photo}`;
+            localStorage.setItem("userPhoto", userProfff);
             setUserProfile(userProfff);
           }
           setIsLoggedIn(true);
@@ -33,7 +34,13 @@ const Header = (props) => {
         }
       };
 
-      fetchUserName();
+      if (!localStorage.getItem("userPhoto")){
+        fetchUserName();
+      }
+      else{
+        setProfilePhoto(localStorage.getItem("userPhoto"));
+      }
+
     } else {
       setIsLoggedIn(false);
     }
