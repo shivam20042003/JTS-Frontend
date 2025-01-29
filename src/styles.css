@@ -1,21 +1,25 @@
 @font-face {
-    font-family: cookie;
-    src: url(../Cookie-Regular.ttf);
+    font-family: "cookie";
+    src: url("../Cookie-Regular.ttf");
+    font-display: swap; /* Ensures text renders while font loads */
 }
-body{
+
+body {
     overscroll-behavior-y: none;
     scroll-behavior: smooth;
     margin-left: 5%;
     margin-right: 5%;
-    
-
-  background-color: #faf5e6; /* Light beige background */
-  color: #3d3d3d; /* Neutral color for text */
+    padding: 20px 5%; /* Better spacing for readability */
+    background-color: #faf5e6; /* Light beige background */
+    color: #5A3823; /* Warm brown for a softer feel */
+    font-family: "cookie", cursive, sans-serif; /* Ensures a fallback */
 }
 
-@media (max-width: 768px){
-    body{
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
         margin-left: 0;
-    margin-right: 0;
+        margin-right: 0;
+        padding: 15px;
     }
 }
