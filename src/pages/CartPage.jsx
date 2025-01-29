@@ -207,12 +207,12 @@ return (
             ))}
           </div>
           <div className="address-add">
-            <input
-              type="address"
-              placeholder="Add a new address"
-              value={newAddress}
-              onChange={(e) => setNewAddress(e.target.value)}
-            />
+            <textarea
+                    name="address"
+                    onChange={(e) => setNewAddress(e.target.value)}
+                    value={newAddress}
+                    required
+                  ></textarea>
             <button onClick={() => handleAddressDelete(newAddress, +1)}>Add</button>
           </div>
         </div>
