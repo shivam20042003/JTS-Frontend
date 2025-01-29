@@ -207,6 +207,7 @@ return (
             ))}
           </div>
           <div className="address-add">
+          <label className="block">Address</label>
             <textarea
                     name="address"
                     onChange={(e) => setNewAddress(e.target.value)}
