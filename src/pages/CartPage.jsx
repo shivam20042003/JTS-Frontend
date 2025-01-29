@@ -208,7 +208,7 @@ return (
           </div>
           <div className="address-add">
             <input
-              type="text"
+              type="address"
               placeholder="Add a new address"
               value={newAddress}
               onChange={(e) => setNewAddress(e.target.value)}
